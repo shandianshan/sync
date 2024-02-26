@@ -32,8 +32,8 @@ covid下报错
 assert(pos0 < pos1 && pos1 < pos2);
 ```
 首先：keytype是long类型的，会有一些错误
-斜率b在很多时候会被计算为很小的正数，
-有时候会调用put_three_keys，里面b很小会导致3个键被映射到一个位置，触发assert。
+a很小
+有时候会调用put_three_keys，里面a很小会导致3个键被映射到一个位置，触发assert。
 ```cpp
 in src/dili/diliNode.h
  inline void put_three_keys(const keyType *_keys, const recordPtr *_ptrs) {
